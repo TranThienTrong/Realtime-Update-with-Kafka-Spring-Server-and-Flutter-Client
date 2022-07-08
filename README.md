@@ -1,5 +1,7 @@
 # Realtime Update with Kafka on Spring Server and Flutter Client
 
+![91c167b8b221717f2830](https://user-images.githubusercontent.com/36349293/178051599-970d60f3-d4c8-47ad-a8e7-a83b179a7c5d.jpg)
+
 ### STEPS
 1. Start Kafka
 2. Start Spring Boot Server
