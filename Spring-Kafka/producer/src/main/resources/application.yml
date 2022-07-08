@@ -1,0 +1,18 @@
+server:
+  port: 8070
+spring:
+  profiles:
+    active: local
+---
+spring:
+  config:
+    activate:
+      on-profile: local
+  kafka:
+    producer:
+      bootstrap-servers: localhost:9092
+      key-serializer: org.apache.kafka.common.serialization.IntegerSerializer # Because LibraryEventId is Integer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer # Because Book is String
+    admin:
+      properties:
+        bootstrap.servers: localhost:9092
